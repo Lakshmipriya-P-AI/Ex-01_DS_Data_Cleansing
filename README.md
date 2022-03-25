@@ -20,7 +20,7 @@ Save the Clean data to the file
 
 
 # CODE
-'''
+```
 import pandas as pd
 df=pd.read_csv('Data_set.csv')
 print(df.isnull().sum())
@@ -31,7 +31,7 @@ df['rating']=df['rating'].fillna(df['rating'].mean())
 df['current_overall_rank']=df['current_overall_rank'].fillna(df['current_overall_rank'].median())
 df['watchers']=df['watchers'].fillna(df['watchers'].median())
 print(df.isnull().sum())
-'''
+```
 # OUPUT
 ### BEFORE CLEANING THE DATA
 ![before-cleaning-data](https://user-images.githubusercontent.com/93427923/160147847-3cfbd9ae-49c1-4970-b407-bd64d26349c8.png)
